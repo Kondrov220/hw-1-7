@@ -9,7 +9,7 @@ const TaskList = styled.ul`
   padding: 0;
   margin: 0;
   width: 300px;
-  background-color: #f9f9f9;
+  background-color: rgba(247, 114, 114, 1);
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 
