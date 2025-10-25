@@ -8,12 +8,13 @@ class TaskLi extends Component {
 
 
 render(){
+      const { arr, click } = this.props;
 return <>
-{this.props.arr.map((obj) => {
+{arr.map((obj) => {
     return (
         <li key={obj.id}>
             <p>{obj.text}</p>
-            <button onClick={this.props.click} id={obj.id}>Видалити</button>
+            <button onClick={()=>click(obj.id)} id={obj.id}>Видалити</button>
         </li>
     );
   })}

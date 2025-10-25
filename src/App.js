@@ -27,9 +27,10 @@ tasks : [
 ]
 }
 
-   remov = (e) => {
-    this.setState(this.state.tasks = this.state.tasks.filter(task => task.id !== Number(e.target.id)));
-    console.log(this.state.tasks);
+  remov = (id) => {
+    this.setState({
+      tasks: this.state.tasks.filter(task => task.id !== id)
+    });
   }
 
 add = () => {
